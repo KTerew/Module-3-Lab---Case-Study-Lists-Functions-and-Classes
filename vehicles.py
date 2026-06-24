@@ -5,7 +5,7 @@ class Vehicle():
 
 class Automobile(Vehicle):
     def __init__(self, vehicleType, year, make, model, doors, roof):
-        self.vehicleType = vehicleType
+        super().__init__(vehicleType)
         self.year = year
         self.make = make
         self.model = model
